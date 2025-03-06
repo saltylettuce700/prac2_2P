@@ -1,0 +1,82 @@
+/* Aplicar la fuente a toda la página */
+
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo del título */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* Contenedor del carrito */
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de productos */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto Mono", monospace;
+
+}
+
+/* Estilo para los botones */
+button {
+    background: #04a35e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    font-family: "Roboto Mono", monospace;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Botón de eliminar */
+button:nth-child(2) {
+    background: #dc3545;
+}
+
+button:nth-child(2):hover {
+    background: #a71d2a;
+}
+
+/* Mensaje cuando el carrito está vacío */
+p {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    font-size: 16px;
+}
