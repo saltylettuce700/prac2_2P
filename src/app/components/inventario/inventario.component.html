@@ -1,0 +1,43 @@
+<h2>INVENTARIO</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Administración de Producto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of inventario">
+            <td>{{ producto.id }}</td>
+            <td>{{ producto.nombre }}</td>
+            <td>${{ producto.precio }}</td>
+            <td>
+                <img [src]="producto.imagen" alt="{{ producto.nombre }}" width="50">
+            </td>
+            <td>{{ producto.descripcion }}</td>
+            <td>
+                <button (click)="agregarMenosProducto(producto)">-</button>
+                {{ producto.cantidad }}
+                <button (click)="agregarMasProducto(producto)">+</button>
+                
+            </td>
+            <td>
+                <button (click)="editarProducto(producto)">Editar</button>
+                <button (click)="eliminarProducto(producto.id)">Eliminar Producto</button>
+                
+
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<button (click)="agregarNuevoProducto()">Agregar</button>
+<button (click)="generarXMLInventario()">Descargar XML</button>
+<button (click)="guardarCambiosXML()">Guardar Cambios</button>

@@ -3,8 +3,8 @@ import { Producto } from '../../models/producto';
 import { ProductoService } from '../../services/producto.service';
 import { CommonModule } from '@angular/common';
 import { CarritoService } from '../../services/carrito.service';
+import { InventarioService } from '../../services/inventario.service';
 import { Router } from '@angular/router';
-//import { CarritoService } from '../../services/carrito.service';
 
 @Component({
   selector: 'app-producto',
@@ -25,16 +25,28 @@ export class ProductoComponent implements OnInit {
 
   ){}
 
-  ngOnInit(){
-    this.productos = this.productoService.obtenerProductos();
+  ngOnInit(): void {
+    this.productoService.obtenerProductos().subscribe({
+      next: data => {
+        this.productos = data;
+      },
+      error: error => {
+        console.error(error.message);
+      }
+    });
   }
 
   agregarAlCarrito(producto:any){
     this.carritoService.agregarProducto(producto);
 
   }
+  
   irAlCarrito(){
     this.router.navigate(['/carrito']);
+  }
+  
+  irAlInventario(){
+    this.router.navigate(['/inventario']);
   }
 
 }
