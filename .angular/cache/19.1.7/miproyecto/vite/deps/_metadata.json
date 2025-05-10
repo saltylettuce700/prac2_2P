@@ -1,55 +1,61 @@
 {
-  "hash": "c2bbb820",
-  "configHash": "fa735145",
-  "lockfileHash": "58972937",
-  "browserHash": "5c7b917a",
+  "hash": "54e1f61f",
+  "configHash": "db5d0981",
+  "lockfileHash": "e73849e7",
+  "browserHash": "14b22f8b",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "1f1527fa",
+      "fileHash": "6b86967a",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "6d9b7dd7",
+      "fileHash": "7dc77af2",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "10fdf5df",
+      "fileHash": "510cd478",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "22c7b691",
+      "fileHash": "4f10dbf3",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "ad8f88db",
+      "fileHash": "b0517141",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "32e5419c",
       "needsInterop": false
     },
     "rxjs/operators": {
       "src": "../../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
       "file": "rxjs_operators.js",
-      "fileHash": "2c81ca05",
+      "fileHash": "c4f610a8",
       "needsInterop": false
     },
     "xml2js": {
       "src": "../../../../../../node_modules/xml2js/lib/xml2js.js",
       "file": "xml2js.js",
-      "fileHash": "ba969e25",
+      "fileHash": "0a0e5454",
       "needsInterop": true
     },
-    "rxjs": {
-      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
-      "file": "rxjs.js",
-      "fileHash": "cc7f9730",
+    "ngx-paypal": {
+      "src": "../../../../../../node_modules/ngx-paypal/fesm2020/ngx-paypal.mjs",
+      "file": "ngx-paypal.js",
+      "fileHash": "36f7fd42",
       "needsInterop": false
     }
   },

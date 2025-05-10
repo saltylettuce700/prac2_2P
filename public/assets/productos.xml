@@ -27,7 +27,7 @@
   <producto>
     <id>4</id>
     <nombre>nuevo</nombre>
-    <precio>444</precio>
+    <precio>10</precio>
     <imagen>/assets/laptop.jpg</imagen>
     <descripcion>ajajsdjsd</descripcion>
     <cantidad>888</cantidad>
